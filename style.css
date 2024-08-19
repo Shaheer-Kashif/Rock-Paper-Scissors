@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    padding-left:300px;
+    padding-right:300px;
+}
+
+.main-container {
+    margin-top:100px;
+    display:flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 3rem;
+
+}
+
+.button {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons {
+    margin-top:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button span {
+    margin-top:15px;
+    font-size:30px;
+}
+.button img {
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button img:hover {
+    border: 5px solid rgb(255, 234, 47);
+}
+
+.buttons .button .clicked {
+    border: 5px solid rgb(2, 197, 44);
+}
+
+.scoreboard {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score .text {
+    font-size: 20px;
+    font-weight:500;
+}
+
+.score .number {
+    font-size: 30px;
+    font-weight:600;
+}
+
+#ai-score {
+    text-align: right;
+}
+
+#player-number {
+    color:rgb(2, 197, 44);
+}
+
+#ai-number {
+    color:rgb(255, 0, 0);
+}
