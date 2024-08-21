@@ -74,6 +74,10 @@ h2 {
     border: 5px solid rgb(255, 0, 0);
 }
 
+.buttons .button .double-border {
+    box-shadow: 0 0 0 8px red;
+}
+
 .scoreboard {
     margin-top: 80px;
     display: flex;
@@ -82,13 +86,11 @@ h2 {
 }
 
 .scoreboard .turn {
-    width: 270px;
-    height:35px;
     text-align: center;
-    font-size: 24px;
-    
-    background-color: #0048ff;
+    font-size: 20px;
     border-radius: 10px;
+    background-color: #0048ff;
+    padding:10px;
 }
 .score .text {
     font-size: 20px;
@@ -110,4 +112,13 @@ h2 {
 
 #ai-number {
     color:rgb(255, 0, 0);
+}
+
+.freeze-page {
+    pointer-events: none;
+    user-select: none;
+}
+
+.freeze-page * {
+    cursor: wait;
 }
